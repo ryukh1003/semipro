@@ -1,0 +1,1148 @@
+.poppins-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: 'Spectral', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.brygada-1918-<uniquifier > {
+  font-family: 'Brygada 1918', serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transform: skew(-0.1deg);
+}
+header {
+  overflow: hidden;
+}
+.mw {
+  max-width: 1400px;
+  width: calc(100% - 3rem);
+  margin: 1rem auto;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  padding-bottom: 100px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+header.on {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.innerHd {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.innerHd > * {
+  display: flex;
+  gap: 2rem;
+}
+
+.innerHd h1 {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.innerHd h1 img {
+  transition: 0.3s;
+}
+.innerHd h1 img.on {
+  transform: scale(0.25) translateX(150px) translateY(-430px);
+}
+.linkHd {
+  font-family: 'Poppins', sans-serif;
+}
+
+.linkHd > li:nth-of-type(1) a {
+  border: 1px solid black;
+  padding: 0.2rem 1.5rem;
+  transition: 0.3s;
+}
+.linkHd > li:nth-of-type(1):hover a {
+  background-color: black;
+  color: white;
+}
+
+.linkHd > li:nth-of-type(n + 2) a,
+.innerHd > .func a i {
+  transition: 0.3s;
+}
+.linkHd > li:nth-of-type(n + 2):hover a {
+  opacity: 0.5;
+}
+
+.innerHd > .func a:hover i {
+  transform: scale(1.5);
+}
+
+.searchModal {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.searchModal.on {
+  opacity: 1;
+  pointer-events: all;
+}
+.searchModal .modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modalBox .searchBox {
+  margin-bottom: 5rem;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalBox .searchBox .sInput {
+  border: none;
+  outline: none;
+  width: 550px;
+  height: 50px;
+}
+.modalBox .searchText span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+}
+
+.modalBox .searchText ul {
+  font-size: 2.65rem;
+  width: 650px;
+  font-family: 'Spectral', serif;
+  font-weight: bold;
+}
+.modalBox .searchText ul li {
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+.modalBox .searchText ul li:hover a {
+  opacity: 0.2;
+  transition: 0.3s;
+}
+
+.searchText ul li:not(:last-of-type)::after {
+  content: '/';
+  position: absolute;
+  right: -1rem;
+}
+
+.searchModal > span {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.searchModal > span:hover {
+  transform: rotate(180deg);
+}
+
+.modalBack {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.modalBack.on {
+  pointer-events: all;
+  opacity: 1;
+}
+.modalBack .hamModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  width: 432px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+.modalBack .hamModal.on {
+  transform: translateX(0%);
+}
+.hamModal > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.3s;
+}
+.hamModal .modal1 {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+.hamModal .modal2 {
+  padding-bottom: 2rem;
+  border-bottom: 3px solid black;
+}
+.hamModal a {
+  font-family: 'Spectral', serif;
+  font-size: 1.875rem;
+}
+
+.hamModal .modalSns a,
+.hamModal .modalLog a {
+  font-size: 0.875rem;
+  font-family: 'Poppins', sans-serif;
+}
+.hamModal .modalLog .wrapLog {
+  display: flex;
+  justify-content: space-between;
+}
+.hamModal ul a:hover {
+  opacity: 0.3;
+}
+.hamModal .modalLog a {
+  font-size: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem 1.8rem;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.hamModal > div span:hover a {
+  color: white;
+  background-color: black;
+}
+
+.hamModal > span {
+  position: absolute;
+  top: 2.8rem;
+  right: 2.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hamModal > span:hover {
+  transform: rotate(180deg);
+}
+.sec1 {
+  height: 100vh;
+  background-image: url(../img/Section01.png);
+  background-attachment: fixed;
+  background-size: cover;
+  /* 스크롤을 내리면 컨테이너랑 이미지 사이에 흰 여백이
+  살짝 생기는데 이게 왜 생기는지 모르겠어요 */
+}
+.sec1 h2 {
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Spectral', serif;
+  white-space: nowrap;
+}
+
+.sec1 h2 > * {
+  display: block;
+}
+.sec1 h2 strong {
+  font-size: 4.7rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sec1 h2 span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sec2 {
+  /* border: 1px solid blue; */
+  width: 100%;
+  margin-top: 228px;
+  position: relative;
+  padding-bottom: 10%;
+}
+.boxAll {
+  width: calc(100% - 96px);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+  font-family: 'Spectral', serif;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.boxAll::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #4d4d4d;
+  bottom: -10%;
+}
+
+.sec2 .boxLeft {
+  top: 0;
+  position: sticky;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sec2 .boxLeft h2 {
+  padding-top: 10rem;
+  line-height: 3rem;
+}
+.sec2 .boxLeft h2 strong {
+  font-size: 3.75rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.sec2 .boxRight {
+  width: 50%;
+  /* position: absolute; */
+  /* right: 0;
+  top: 0; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  grid-row-gap: 100px;
+  padding-bottom: 100px;
+}
+.sec2 .boxRight .boxSmall {
+  position: relative;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.sec2 .boxRight .boxSmall > img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.sec2 .boxRight .boxSmall > * {
+  margin-bottom: 10px;
+}
+.sec2 .boxRight figcaption {
+  text-align: left;
+}
+.sec2 .boxRight figcaption > * {
+  display: block;
+  margin-bottom: 1rem;
+}
+.sec2 .boxRight figcaption span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+}
+.sec2 .boxRight figcaption h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.sec2 .boxRight figcaption p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: #4d4d4d;
+}
+.sec2 .boxRight figcaption span::after {
+  content: ' , ISSUE 49';
+}
+.sec2 .boxRight .boxSmall > a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: transparent;
+}
+.sec2 .boxRight .boxSmall:hover img {
+  opacity: 0.7;
+}
+.sec2 .boxAll > a {
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  right: 50%;
+  transform: translateX(50%);
+  top: 100%;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.sec2 .boxAll > a:hover {
+  background-color: black;
+  color: white;
+}
+
+.sec3 {
+  padding: 120px;
+}
+.sec3 .box3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.sec3 .box3 .textBox3 {
+  font-family: 'Spectral', serif;
+  font-size: 5.625rem;
+  height: 100%;
+}
+.sec3 .box3 .textBox3 h2 {
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-bottom: 55%;
+}
+.sec3 .box3 .textBox3 h2:before {
+  content: 'FILMS';
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  position: absolute;
+  top: -15px;
+  font-weight: 400;
+}
+.sec3 .box3 .textBox3 p {
+  font-family: 'Brygada 1918', serif;
+  font-style: italic;
+  font-size: 1rem;
+  width: 80%;
+}
+.box3 img {
+  width: 40%;
+}
+
+.box3 a {
+  position: absolute;
+  color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.book {
+  margin: 120px 0;
+  width: 100%;
+  height: 35vw;
+  background-image: url(../img/image-8.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.box4 {
+  text-align: center;
+  padding: 120px 0;
+  font-family: 'Spectral', serif;
+  overflow: hidden;
+}
+
+.box4 > * {
+  margin-bottom: 60px;
+}
+
+.box4 .Swiper4 .swiper-slide {
+  padding: 5rem;
+}
+.box4 .Swiper4 a img {
+  transition: 0.3s;
+}
+.box4 .Swiper4 .swiper-slide:hover img {
+  transform: scale(1.3);
+}
+.box4 h2 {
+  font-size: 1.25rem;
+}
+
+.box4 p {
+  font-size: 1.5rem;
+}
+.box4 > a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  transition: 0.3s;
+}
+
+.box4 > a:hover {
+  background-color: black;
+  color: white;
+}
+
+.sec5 {
+  margin: 120px 0;
+}
+
+.box5,
+.box7 {
+  text-align: center;
+  font-family: 'Spectral', serif;
+  position: relative;
+}
+.box5::before {
+  content: '';
+  position: absolute;
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 2px;
+  top: -120px;
+  left: 0;
+}
+.box5::after {
+  content: '';
+  position: absolute;
+  background-color: #4d4d4d;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.box5 > *,
+.box7 > * {
+  margin-bottom: 96px;
+}
+.box5 h2,
+.box7 h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.box5 .card,
+.box7 .card {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.box5 .card img,
+.box7 .card img {
+  transition: 0.3s;
+}
+.box5 .card:hover img,
+.box7 .card:hover img {
+  filter: brightness(0.8);
+}
+.box5 .card figcaption,
+.box7 .card figcaption {
+  text-align: left;
+  line-height: 24px;
+}
+.box5 .card figcaption > *,
+.box7 .card figcaption > * {
+  display: block;
+  margin: 0 0.5rem;
+}
+.box5 .card figcaption span,
+.box7 .card figcaption span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  margin-top: 12px;
+}
+.box5 .card figcaption span:after,
+.box7 .card figcaption span:after {
+  content: ' , ISSEU49';
+}
+.box5 .card figcaption strong,
+.box7 .card figcaption strong {
+  margin-top: 16px;
+  font-weight: bold;
+}
+.box5 .card figcaption p,
+.box7 .card figcaption p {
+  margin-top: 12px;
+  color: #4d4d4d;
+}
+.box5 .card > a,
+.box7 .card > a {
+  position: absolute;
+  color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sec6 {
+  margin: 120px 0;
+}
+
+.box6 {
+  text-align: center;
+}
+
+.box6 .imgBox6 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 88px;
+}
+
+.box6 .textBox6 {
+  font-family: 'Spectral', serif;
+}
+.box6 .textBox6 > * {
+  display: block;
+  margin-bottom: 60px;
+}
+.box6 .textBox6 span {
+  font-family: 'Poppins', sans-serif;
+}
+.box6 .textBox6 h2 {
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+
+.box6 .textBox6 p {
+  font-size: 1.25rem;
+}
+
+.telev {
+  width: 100%;
+  height: 35vw;
+  background-image: url(../img/image-20.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.sec7 {
+  margin-top: 120px;
+}
+
+.sec8 {
+  height: 50vw;
+  background-image: url(../img/Section11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  transition: 0.3s;
+}
+
+.sec8 .textBox8 {
+  font-family: 'Spectral', serif;
+  color: white;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  transition: 1s linear;
+}
+
+.sec8 .textBox8.on {
+  opacity: 1;
+}
+.sec8 .textBox8 > * {
+  position: absolute;
+}
+
+.sec8 .textBox8 h2 {
+  font-size: 5.625rem;
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sec8 .textBox8 h2 > span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  display: block;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.sec8 .textBox8 h2 > p {
+  font-size: 1.56rem;
+  margin-top: 2rem;
+}
+.sec8 .textBox8 > p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  bottom: 16px;
+}
+
+.sec9 {
+  margin-top: 200px;
+}
+
+.box9 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.box9 .textBox9 {
+  font-family: 'Spectral', serif;
+  font-size: 5.625rem;
+  width: 100%;
+}
+.box9 .textBox9 > * {
+  /* border: 1px solid red; */
+}
+.sec9 .box9 .textBox9 h2 {
+  top: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-bottom: 50%;
+}
+.sec9 .box9 .textBox9 h2:before {
+  content: 'FASHION';
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7rem;
+  position: absolute;
+  top: -15px;
+  font-weight: 400;
+}
+.sec9 .box9 .textBox9 p {
+  font-family: 'Brygada 1918', serif;
+  font-style: italic;
+  font-size: 1rem;
+  width: 80%;
+}
+.sec9 .box9 img {
+  width: 40%;
+}
+.box9 a {
+  position: absolute;
+  color: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sec10 {
+  margin-top: 200px;
+}
+
+.box10 {
+  text-align: center;
+  font-family: 'Spectral', serif;
+}
+
+.box10 h2 {
+  font-size: 1.56rem;
+  font-weight: bold;
+  padding-bottom: 55px;
+}
+
+.box10 .emailBox {
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 15px;
+  color: #4d4d4d;
+}
+
+.box10 .emailBox input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.box10 .emailBox .email {
+  width: 400px;
+  height: 50px;
+  margin: 0 32px;
+}
+.box10 .emailBox .submit {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+.box10 .emailBox .submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.box10 .emailBox .check .swiper-theme-color {
+  background-color: transparent;
+}
+
+.box10 a {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.box10 a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 50px;
+}
+.innerFt {
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid black;
+  padding-top: 30px;
+}
+
+.innerFt .centerFt {
+  font-family: 'Spectral', serif;
+  font-weight: bold;
+}
+
+.innerFt .textWrap {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.innerFt .leftFt > *,
+.innerFt .centerFt > * {
+  margin-right: 1rem;
+}
+
+.innerFt a:hover {
+  opacity: 0.8;
+}
+
+.innerFt .iconFt {
+  display: none;
+}
+
+@media (max-width: 1520px) {
+  .sec2 .boxLeft {
+    width: 35%;
+  }
+  .sec2 .boxLeft h2 strong {
+    font-size: 2rem;
+  }
+  .sec2 .boxRight {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-row-gap: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sec8 {
+    height: 70vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+  }
+
+  .sec8 .textBox8 {
+    font-family: 'Spectral', serif;
+    color: white;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    transition: 1s linear;
+  }
+
+  .sec8 .textBox8.on {
+    opacity: 1;
+  }
+  .sec8 .textBox8 > * {
+    position: absolute;
+  }
+
+  .sec8 .textBox8 h2 {
+    font-size: 4rem;
+  }
+
+  .sec8 .textBox8 h2 > p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    width: 50%;
+  }
+  .sec8 .textBox8 > p {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .innerHd .linkHd li:nth-of-type(n + 2) {
+    display: none;
+  }
+
+  .sec1 h2 {
+    top: 75%;
+  }
+
+  .sec1 h2 strong {
+    font-size: 3.5rem;
+  }
+
+  .sec1 {
+    background-position: center;
+  }
+
+  .boxAll {
+    width: calc(100% - 96px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .sec2 .boxLeft {
+    width: 50%;
+    position: static;
+  }
+
+  .sec2 .boxLeft h2 {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  .sec2 .boxLeft h2 strong {
+    font-size: 2.75rem;
+  }
+
+  .sec2 .boxRight {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-row-gap: 150px;
+    padding-bottom: 150px;
+  }
+
+  .sec3 .box3 {
+    width: 120%;
+    transform: translateX(-10%);
+    margin-top: 5rem;
+  }
+  .sec3 .box3 .textBox3 {
+    font-size: 4.5rem;
+  }
+
+  .box6 .imgBox6 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 88px;
+  }
+  .box6 .imgBox6 > img {
+    width: 45%;
+  }
+  .box6 .textBox6 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .sec9 .box9 .textBox9 {
+    font-size: 4.5rem;
+  }
+
+  .innerFt .textWrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .boxAll {
+    width: calc(100% - 24px);
+  }
+
+  .sec2 .boxRight {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-row-gap: 50px;
+    padding-bottom: 50px;
+  }
+  .sec2 .boxLeft {
+    width: 70%;
+    position: static;
+  }
+  .sec2 .boxLeft h2 strong {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .searchModal .modalBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .modalBox .searchBox {
+    margin-bottom: 5rem;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+  }
+
+  .modalBox .searchText ul {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .modalBox .searchText ul li {
+    display: block;
+  }
+  .searchText ul li:not(:last-of-type)::after {
+    display: none;
+  }
+  .searchModal > span {
+    top: 5%;
+    right: 10%;
+    font-size: 1rem;
+  }
+
+  .book {
+    margin: 120px 0;
+    width: 100%;
+    height: 70vw;
+    background-attachment: unset;
+    background-size: cover;
+    background-position: center;
+  }
+  .telev {
+    width: 100%;
+    height: 40vw;
+    background-attachment: unset;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .box10 h2 {
+    font-size: 1.3rem;
+  }
+
+  .box10 .emailBox .email {
+    width: 45%;
+    height: 50px;
+    margin: 0 12px;
+  }
+
+  .innerFt .textWrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+
+  .innerFt .centerFt {
+    display: none;
+  }
+
+  .innerFt .iconFt {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .innerHd h1 img.on {
+    transform: scale(0.25) translateX(-400px) translateY(-430px);
+  }
+  .innerHd .linkHd li:nth-of-type(1) {
+    display: none;
+  }
+  .innerHd {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+    align-items: center;
+  }
+  .searchModal .modalBox .searchBox {
+    width: 250px;
+  }
+  .sec3 {
+    padding: 60px;
+  }
+  .sec3 .box3 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    position: relative;
+    align-items: center;
+  }
+  .sec3 .box3 .textBox3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .box3 img {
+    margin-top: 50px;
+    width: 80%;
+  }
+  .sec3 .box3 .textBox3 h2 {
+    padding-bottom: 10%;
+  }
+
+  .box4 .Swiper4 {
+    overflow: visible;
+    transform: translateX(-30%);
+  }
+
+  .sec8 {
+    margin-bottom: 250px;
+  }
+  body .sec8 .textBox8 h2 {
+    font-size: 2rem;
+  }
+
+  .sec8 .textBox8 h2 > p {
+    display: none;
+  }
+
+  .sec9 {
+    margin-top: 100px;
+  }
+  .sec9 .box9 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  .sec9 .box9 .textBox9 h2 {
+    font-size: 2rem;
+    padding-bottom: 10%;
+  }
+  .sec9 .box9 img {
+    width: 80%;
+  }
+  .sec9 .box9 .textBox9 p {
+    width: 100%;
+  }
+}
