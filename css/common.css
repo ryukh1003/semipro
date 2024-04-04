@@ -4,9 +4,9 @@
   font-style: normal;
 }
 
-.spectral-medium {
+.spectral-regular {
   font-family: 'Spectral', serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -28,9 +28,7 @@ h5,
 h6 {
   transform: skew(-0.1deg);
 }
-header {
-  overflow: hidden;
-}
+
 .mw {
   max-width: 1400px;
   width: calc(100% - 3rem);
@@ -74,7 +72,7 @@ header.on {
   transition: 0.3s;
 }
 .innerHd h1 img.on {
-  transform: scale(0.25) translateX(150px) translateY(-430px);
+  transform: scale(0.3) translateY(-360px);
 }
 .linkHd {
   font-family: 'Poppins', sans-serif;
@@ -654,7 +652,7 @@ header.on {
 }
 
 .sec8 {
-  height: 50vw;
+  height: 40vw;
   background-image: url(../img/Section11.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -679,7 +677,7 @@ header.on {
 }
 
 .sec8 .textBox8 h2 {
-  font-size: 5.625rem;
+  font-size: 4rem;
   font-weight: bold;
   top: 50%;
   transform: translateY(-50%);
@@ -1072,6 +1070,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+  header {
+    overflow: hidden;
+  }
   .innerHd h1 img.on {
     transform: scale(0.25) translateX(-400px) translateY(-430px);
   }
@@ -1115,6 +1116,10 @@ footer {
     transform: translateX(-30%);
   }
 
+  .sec5 .box5 h2 {
+    width: 70%;
+    margin: 0 auto 96px;
+  }
   .sec8 {
     margin-bottom: 250px;
   }
