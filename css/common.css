@@ -485,9 +485,10 @@ header.on {
   margin-bottom: 60px;
 }
 
-.box4 .Swiper4 .swiper-slide {
-  padding: 5rem;
+.box4 .Swiper4 {
+  overflow: visible;
 }
+
 .box4 .Swiper4 a img {
   transition: 0.3s;
 }
@@ -1113,9 +1114,14 @@ footer {
 
   .box4 .Swiper4 {
     overflow: visible;
-    transform: translateX(-30%);
   }
 
+  .box4 .Swiper4 img {
+    width: 100%;
+  }
+  .box4 .Swiper4 .swiper-slide:hover img {
+    transform: none;
+  }
   .sec5 .box5 h2 {
     width: 70%;
     margin: 0 auto 96px;
@@ -1149,5 +1155,59 @@ footer {
   }
   .sec9 .box9 .textBox9 p {
     width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .modalBox .searchBox {
+    margin-bottom: 3rem;
+  }
+  .modalBox .searchBox span {
+    font-size: 0.75rem;
+  }
+  .modalBox .searchBox .sInput {
+    width: 180px;
+    height: 30px;
+  }
+  .modalBox .searchText ul {
+    font-size: 1.6rem;
+  }
+
+  .modalBack .hamModal {
+    width: 100%;
+  }
+  .hamModal a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+  }
+  .hamModal .modalSns {
+    flex-direction: row;
+  }
+  .hamModal .modalLog a {
+    padding: 0.5rem 0.8rem;
+  }
+  .sec1 h2 strong {
+    font-size: 3rem;
+  }
+
+  .box4 p {
+    font-size: 1.2rem;
+  }
+  .sec5 .box5 h2 {
+    width: 90%;
+  }
+  .box10 h2 {
+    font-size: 1.2rem;
+  }
+
+  .box10 span,
+  .box10 > a,
+  .box10 .emailBox .submit {
+    font-size: 0.8rem;
+  }
+  .box10 .emailBox .email {
+    width: 45%;
+    height: 50px;
+    margin: 0 12px;
   }
 }

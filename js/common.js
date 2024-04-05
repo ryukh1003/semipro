@@ -11,7 +11,7 @@ let Swiper4 = new Swiper('.Swiper4', {
   loop: true,
 
   breakpoints: {
-    1400: {
+    1100: {
       slidesPerView: 2,
       centeredSlides: true,
       spaceBetween: 30,
